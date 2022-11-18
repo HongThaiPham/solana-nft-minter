@@ -5,6 +5,7 @@ import Disconnected from "../components/Disconnected";
 import NavBar from "../components/NavBar";
 import styles from "../styles/Home.module.css";
 import { useWallet } from "@solana/wallet-adapter-react";
+import Connected from "../components/Connected";
 const Home: NextPage = () => {
   const { connected } = useWallet();
   return (
@@ -27,7 +28,7 @@ const Home: NextPage = () => {
           <Spacer />
           <Center>
             {/* If connected, the second view, otherwise the first */}
-            {!connected && <Disconnected />}
+            {connected ? <Connected /> : <Disconnected />}
           </Center>
           <Spacer />
 

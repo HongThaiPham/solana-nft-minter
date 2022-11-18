@@ -34,11 +34,11 @@ const Connected: FC = () => {
       </Container>
 
       <HStack spacing={10}>
-        <Image src="avatar1.png" alt="" />
-        <Image src="avatar2.png" alt="" />
-        <Image src="avatar3.png" alt="" />
-        <Image src="avatar4.png" alt="" />
-        <Image src="avatar5.png" alt="" />
+        <Image src="/assets/avatar1.png" alt="" />
+        <Image src="/assets/avatar2.png" alt="" />
+        <Image src="/assets/avatar3.png" alt="" />
+        <Image src="/assets/avatar4.png" alt="" />
+        <Image src="/assets/avatar5.png" alt="" />
       </HStack>
 
       <Button bgColor="accent" color="white" maxW="380px">
